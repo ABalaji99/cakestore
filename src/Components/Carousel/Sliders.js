@@ -13,7 +13,7 @@ function Sliders() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../imgaes/slide1.jpg"
+          src="../images/slide1.jpg"
           alt="First slide"
         />
         
@@ -21,7 +21,7 @@ function Sliders() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../imgaes/slide2.jpg"
+          src="../images/slide2.jpg"
           alt="Second slide"
         />
 

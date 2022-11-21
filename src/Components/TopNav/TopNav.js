@@ -26,14 +26,14 @@ function TopNav() {
     <Row>
       <Col>
         <select defaultValue={lang} onChange={handleAddrTypeChange}>
-          <option value="English"><RiEnglishInput /> English</option>
-          <option value="Urdu"><RiEnglishInput /> Urdu</option>
-          <option value="telugu"><RiEnglishInput /> Telugu</option>
+          <option value="English"> English</option>
+          <option value="Urdu"> Urdu</option>
+          <option value="telugu"> Telugu</option>
         </select>
-        <select defaultValue={lang} onChange={handleAddrTypeChange}>
-          <option value="English"><RiEnglishInput /> English</option>
-          <option value="Urdu"><RiEnglishInput /> Urdu</option>
-          <option value="telugu"><RiEnglishInput /> Telugu</option>
+        <select >
+          <option value="English"> English</option>
+          <option value="Urdu"> Urdu</option>
+          <option value="telugu"> Telugu</option>
         </select>
       </Col>
 
