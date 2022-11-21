@@ -3,12 +3,12 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../Home/Home'
 import Sale from '../Sale/Sale';
 
-function Routing(cakes) {
-  const cakes= cakewale ;
+function Routing({constantItems}) {
+
   return (
     <>
    <Routes>
-    <Route path='/' element={<Home cakeItems={cakewale}/>}/>
+    <Route path='/' element={<Home cakeItems={constantItems}/>}/>
     <Route path='/sale' element={<Sale/>}/>
    </Routes>
    </>

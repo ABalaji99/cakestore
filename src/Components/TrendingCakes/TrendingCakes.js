@@ -1,13 +1,16 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import Button from 'react-bootstrap/Button';
+
 import Card from 'react-bootstrap/Card';
 
+import { BsGraphUp } from 'react-icons/bs';
+import { FaHeart ,FaSearch} from 'react-icons/fa';
 
 
-function TrendingCakes(cakesz) {
 
-    const trendCakes = cakesz 
+function TrendingCakes({trendCakes}) {
+
+
 
     return (
         <Container fluid>
@@ -22,20 +25,25 @@ function TrendingCakes(cakesz) {
 
                     <Row>
                         {
-                           trendCakes.map((cake) => {
-                                <Col className='xl-3' key={cake.id}>
+                            trendCakes.map((cook) => (
+                                <Col key={cook.id}>
                                     <Card style={{ width: '18rem' }}>
-                                        <Card.Img variant="top" src={cake.img} />
+                                        <Card.Img variant="top" src={cook.img} />
                                         <Card.Body>
-                                            <Card.Title>{cake.title}</Card.Title>
+                                            <Card.Title>{cook.title}</Card.Title>
                                             <Card.Text>
-                                              ${cake.price}
+                                                ${cook.price}
                                             </Card.Text>
-                                            <Button variant="primary">Go somewhere</Button>
+                                           <div className='btn-group'>
+                                            <button type="">Add to cart</button>
+                                            <button type=""><BsGraphUp/></button>
+                                            <button type=""><FaHeart/></button>
+                                            <button type=""><FaSearch/></button>
+                                           </div>
                                         </Card.Body>
                                     </Card>
                                 </Col>
-                            })
+                            ))
                         }
                     </Row>
 
