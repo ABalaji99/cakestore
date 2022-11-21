@@ -11,6 +11,8 @@ import Categories from '../Catergories/Categories';
 
 import TrendingCakes from '../TrendingCakes/TrendingCakes';
 import CupCakes from '../CupCakes/CupCakes';
+import Featured from '../Featured/Featured';
+import Footer from '../Footer/Footer';
 
 function Home({ cakeItems }) {
 
@@ -24,6 +26,8 @@ function Home({ cakeItems }) {
         <Categories />
         <TrendingCakes trendCakes={cakeItems} />
         <CupCakes cupCakes={cakeItems}/>
+        <Featured featurepro ={cakeItems}/>
+        <Footer/>
 
         <button type="button" className='buynow-sticky'>
           <SiBigcartel /> Buy Now

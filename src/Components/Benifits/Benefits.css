@@ -1,0 +1,31 @@
+.benefits{
+    border-bottom: 1px solid var(--border);
+}
+
+
+.benefits .row .content{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 40px 40px 0;
+    border-right: 1px solid var(--border);
+
+}
+
+
+
+.content svg{
+    font-size: 40px;
+}
+
+.content a p{
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+.content a {
+    color: #000;
+    text-decoration: none;
+}
+.content a:hover{
+    color: #ffc9ce;
+}

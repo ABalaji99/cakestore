@@ -1,0 +1,55 @@
+
+
+:root{
+    --clr1: #d41342;
+    --border: rgb(139, 139, 139);
+}
+
+.top-nav{
+    padding: 20px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.top-nav div  p{
+    margin-bottom: 0;
+}
+
+.top-nav div  p a{
+     color: var(--clr1) !important;
+     text-decoration: underline !important;
+
+}
+
+.top-nav select{
+   border: none;
+   outline: none;
+   background: none !important;
+   border-bottom: 1px solid black;
+   margin-right: 10px;
+}
+
+
+
+.top-nav select option {
+    background: none !important;
+    border: 0;
+    padding: 6px 0;
+    outline: 0;
+    border-radius: 0;
+}
+
+.top-nav select option:hover{
+    background-color: gray !important;
+}
+
+.top-nav .social-link a{
+    color: black;
+    font-size: 18px;
+    margin-left: 10px;
+}
