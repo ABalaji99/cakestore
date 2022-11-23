@@ -14,7 +14,7 @@ import { CgShoppingBag } from 'react-icons/cg'
 
 import '../MainNav/MainNav.css';
 import { useNavigate } from 'react-router-dom';
-
+    
 function Main() {
 
     const [show, setShow] = useState(false);

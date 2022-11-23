@@ -55,7 +55,7 @@ function Routing({constantItems}) {
     
     <Route path='/sale' element={<Sale/>}/>
 
-    <Route path='/cart' element={<Cart cartItems={constantItems}  handleAddPro={handleAddProduct} handleRemovePro={handleRemoveProduct} handleCartClear = {handleCartClearance}/>}/>
+    <Route path='/cart' element={<Cart cartItems={constantItems}  handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} handleCartClearance = {handleCartClearance}/>}/>
 
     <Route path='*' element ={<Error/>}/>
 
