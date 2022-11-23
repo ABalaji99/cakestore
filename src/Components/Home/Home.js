@@ -14,7 +14,7 @@ import CupCakes from '../CupCakes/CupCakes';
 import Featured from '../Featured/Featured';
 import Footer from '../Footer/Footer';
 
-function Home({ cakeItems }) {
+function Home({ cakeItems, handleAddProduct }) {
 
   return (
     <div className='home'>
@@ -24,7 +24,7 @@ function Home({ cakeItems }) {
         <Sliders />
         <Benefits />
         <Categories />
-        <TrendingCakes trendCakes={cakeItems} />
+        <TrendingCakes trendCakes={cakeItems} handleAdd={handleAddProduct} />
         <CupCakes cupCakes={cakeItems}/>
         <Featured featurepro ={cakeItems}/>
         <Footer/>
