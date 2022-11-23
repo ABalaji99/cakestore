@@ -63,7 +63,7 @@ const Cart = ({ cartItems, handleAddProduct, handleRemoveProduct, handleCartClea
                     </div>
                 </div>
                 <div className='check-out-btn'>
-                    <button className='check-btn' onClick={() => history.push('')}>Continue Shopping</button>
+                    <button className='check-btn' onClick={() => history.push('')}><a href="#products">Continue Shopping</a></button>
                     <button className='check-btn'>   <Link to="/checkout" title='Payment'>
                         Checkout
 

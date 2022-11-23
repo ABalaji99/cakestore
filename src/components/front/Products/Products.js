@@ -19,7 +19,7 @@ const Products = ({ productItems, handleAddProduct }) => {
 
 
         <Container fluid>
-        <div className='trending-cakes'>
+        <div className='trending-cakes' id='products'>
             <Container>
                 <h3>
                     Trending Cakes 2020
@@ -42,7 +42,7 @@ const Products = ({ productItems, handleAddProduct }) => {
                                             </Card.Text>
                                             <div className='btn-group'>
                                                
-                                             <button type="button"  onClick={() => handleAddProduct(cook )}>Add to cart</button>
+                                             <button type="button"  onClick={() => handleAddProduct(cook )}><a href="#topnav">Add to cart</a></button>
                                                 <button type="button"><BsGraphUp /></button>
                                                 <button type="button"><FaHeart /></button>
                                                 <button type="button"><FaSearch /></button>

@@ -15,6 +15,7 @@ body {
 	font-weight: 400;
 	background-color: #fff;		
 	color: #646a7c;
+  scroll-behavior: smooth !important;
 
 }
 
@@ -671,6 +672,12 @@ margin-left: 10px;
 .check-out-btn button a{
   color: #000;
   text-decoration: none;
+}
+
+.check-out-btn button a:hover{
+  color: var(--theme);
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
 }
 .card-item-empty {
   margin: 70px auto;
