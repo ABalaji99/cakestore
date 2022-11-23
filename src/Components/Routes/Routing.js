@@ -11,16 +11,18 @@ function Routing({constantItems}) {
   const [cartItems, setCartItems] = useState([]);
 
 
+ 
+
   const handleAddProduct = (product) =>{
     // find-product is already in cart items
     const ProductExist = cartItems.find((item) => item.id === product.id);
 
     if(ProductExist){
-      setCartItems(cartItems.map((item) => item.id === product.id ? {...ProductExist,quntity: ProductExist.quntity+1}:item)
+      setCartItems(cartItems.map((item) => item.id === product.id ? {...ProductExist,quantity: ProductExist.quantity+1}:item)
       );
     }
     else{
-      setCartItems([...cartItems, {...product, quntity: 1}])
+      setCartItems([...cartItems, {...product, quantity: 1}])
     }
   };
 
@@ -34,7 +36,7 @@ function Routing({constantItems}) {
         }
         else{
           setCartItems(
-            cartItems.map((item) => item.id === product.id ? {...ProductExist, quntity: ProductExist.quntity - 1}:item)
+            cartItems.map((item) => item.id === product.id ? {...ProductExist,quantity: ProductExist.quantity - 1}:item)
           )
         }
       }
@@ -42,7 +44,7 @@ function Routing({constantItems}) {
 
         // clear cart function 
   const handleCartClearance = () =>{
-    setCartItems([]);
+    setCartItems([0]);
   }
 
 

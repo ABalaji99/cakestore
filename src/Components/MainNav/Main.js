@@ -168,7 +168,7 @@ function Main() {
                 </div>
                
                 <div className='cart'>
-                    <button type="button" onClick={()=>navToCart('/cart')}><CgShoppingBag /> Your cart have {} items: {} </button>
+                    <button type="button" ><CgShoppingBag /> Your cart have {} items: {} </button>
                 </div>
 
             </div>
