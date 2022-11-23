@@ -13,11 +13,12 @@ import { TiUser } from 'react-icons/ti';
 import { CgShoppingBag } from 'react-icons/cg'
 
 import '../MainNav/MainNav.css';
+import { useNavigate } from 'react-router-dom';
 
 function Main() {
 
     const [show, setShow] = useState(false);
-
+    const navToCart = useNavigate()
     return (
 
         <div className='main-nav d-flex align-items-center justify-content-between'>
@@ -167,7 +168,7 @@ function Main() {
                 </div>
                
                 <div className='cart'>
-                    <CgShoppingBag /> Your Cart -9999999 $
+                    <button type="button" onClick={()=>navToCart('/cart')}><CgShoppingBag /> Your cart have {} items: {} </button>
                 </div>
 
             </div>

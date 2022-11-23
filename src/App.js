@@ -7,7 +7,6 @@ import '../src/App.css'
 
 function App() {
 
-  
 
   return (
   <div className="app">

@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import { useNavigate } from 'react-router-dom';
 
 
-const Cart = ({cartItems, handleAddProduct, handleRemoveProduct,handleCartClearance}) => {
+const Cart = ({cartItems, handleAddPro, handleRemovePro,handleCartClear}) => {
     const totalPrice = cartItems.reduce((price,item) => price + item.quntity * item.price,0);
 
     const navtoCheckout = useNavigate()
@@ -15,7 +15,7 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct,handleCartCleara
     <Container>
         <div className='clear-cart-txt'>
             {cartItems.length >=1 && (
-                <button className='clear-cart-btn' onClick={handleCartClearance}>Clear Cart Item</button>
+                <button className='clear-cart-btn' onClick={handleCartClear()}>Clear Cart Item</button>
             )}
         </div>
         {cartItems.length === 0 && (<div className='card-item-empty'>Your Shopping bag is empty!!!!<img src = "" width={'40px'} alt=''/></div>)}
@@ -35,8 +35,8 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct,handleCartCleara
                                                 <td><div className='cart-item-name'>{item.title}</div></td>
                                                 <td>
                                                     <div className='cart-item-function'>
-                                                        <button className='cart-item-add' onClick={() => handleAddProduct(item)}>+</button>
-                                                        <button className='cart-remove-add' onClick={() => handleRemoveProduct(item)}>-</button>
+                                                        <button className='cart-item-add' onClick={() => handleAddPro(item)}>+</button>
+                                                        <button className='cart-remove-add' onClick={() => handleRemovePro(item)}>-</button>
                                                     </div>
                                                 </td>
                                                 <td>
