@@ -1,0 +1,64 @@
+
+footer{
+    background: #000;
+    color: #fff;
+    padding-top: 80px;
+}
+
+.footer-head  {
+    margin-bottom: 40px;
+}
+
+.footer-head form {
+    background: rgb(37, 37, 37);
+    padding: 10px 20px;
+}
+.footer-head form input{
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.footer-head form  label{
+    color: rgb(128, 128, 128);
+}
+.footer-head .icons span{
+    margin-right: 20px;
+}
+
+.footer-head .icons span a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .col ul{
+    margin-left: -32px;
+}
+.f-bottom {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.f-bottom p{
+    color: rgb(70, 70, 70);
+}
+
+footer .col ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+.row .col .grd{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+.row .col .grd img{
+    width: 90px;
+    height: 80px;
+    object-fit: fill;
+    margin-bottom: 10px;
+}

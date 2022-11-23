@@ -1,0 +1,53 @@
+.Featured {
+   padding: 60px 0;
+   border-top:  1px solid var(--border);
+}
+
+.Featured h2{
+    text-align: center;
+}
+.Featured p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Featured .col{
+    margin-bottom: 20px;
+    
+}
+
+.Featured .col img{
+ width: 412px;
+}
+
+.Featured .col div p{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+
+.Featured div a{
+    padding: 0;
+    font-weight: 700;
+    font-size: 22px;
+    color: #000;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-bottom: 10px !important;
+}
+
+.feat-satus-bar{
+    background: rgb(246, 246, 246);
+    align-items: flex-end !important;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.feat-satus-bar div span{
+    padding: 0;
+    font-weight: 600;
+   
+    color: #000;
+    text-transform: capitalize;
+    text-decoration: none;
+}
